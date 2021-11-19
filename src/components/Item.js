@@ -5,7 +5,7 @@ const Item = (props) => {
   let itemArr = [];
   productData.forEach((item) => {
     itemArr.push(
-      <div>
+      <div className="product">
         <h2>{item.name}</h2>
         <p>Price: {formatPrice(item.price)}</p>
         <button

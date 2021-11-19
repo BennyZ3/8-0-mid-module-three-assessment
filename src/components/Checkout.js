@@ -1,7 +1,7 @@
 //Checkout form componenet probably
 const Checkout = (props) => {
   return (
-    <>
+    <div className="checkoutContainer">
       <h2>Checkout</h2>
       <form id="checkout" onSubmit={props.checkout}>
         <label for="first">First Name </label>
@@ -14,9 +14,11 @@ const Checkout = (props) => {
         <input type="number" id="credit" name="credit" />
         <label for="zip">Zip Code</label>
         <input type="number" id="zip" name="zip" />
-        <button type="submit">Buy Now</button>
+        <button type="submit" className="buy">
+          Buy Now
+        </button>
       </form>
-    </>
+    </div>
   );
 };
 
