@@ -6,7 +6,7 @@ const Cart = (props) => {
   props.items.forEach((item) => {
     array.push(
       <li>
-        {item.name}: ${item.price}
+        {item.name}: {formatPrice(Number(item.price))}
       </li>
     );
     sub += Number(item.price);

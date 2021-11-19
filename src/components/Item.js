@@ -9,7 +9,12 @@ const Item = (props) => {
       <div>
         <h2>{item.name}</h2>
         <p>Price: {formatPrice(item.price)}</p>
-        <button onClick={props.addToCart} name={item.name} value={item.price}>
+        <button
+          type="submit"
+          onClick={props.addToCart}
+          name={item.name}
+          value={item.price}
+        >
           Add To Cart
         </button>
         <p />
