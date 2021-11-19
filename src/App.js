@@ -44,6 +44,8 @@ class App extends react.Component {
     }
     if (e.target.zip.value.length < 5) {
       complete += `\nZip code is not valid`;
+      invalid += `\nZip code is not valid`;
+      accept = false;
     }
     if (accept) {
       alert(complete);
