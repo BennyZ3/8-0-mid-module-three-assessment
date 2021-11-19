@@ -3,7 +3,7 @@ const Checkout = (props) => {
   return (
     <>
       <h2>Checkout</h2>
-      <form id="checkout">
+      <form id="checkout" onSubmit={props.checkout}>
         <label for="first">First Name </label>
         <input type="text" id="first" name="first" />
         <label for="last">Last Name </label>
