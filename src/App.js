@@ -24,7 +24,6 @@ class App extends react.Component {
       ],
       subTotal: (this.state.subTotal += Number(event.target.value)),
     });
-    // console.log(this.state.cart);
   };
 
   checkout = (e) => {
@@ -43,7 +42,7 @@ class App extends react.Component {
       accept = false;
     }
     if (e.target.zip.value.length < 5) {
-      complete += `\nZip code is not valid`;
+      // complete += `\nZip code is not valid`;
       invalid += `\nZip code is not valid`;
       accept = false;
     }
@@ -52,7 +51,6 @@ class App extends react.Component {
     } else {
       alert(invalid);
     }
-    console.log(e.target.first.value);
   };
 
   render() {

@@ -4,7 +4,6 @@ import formatPrice from "../helpers/formatPrice";
 const Item = (props) => {
   let itemArr = [];
   productData.forEach((item) => {
-    // console.log(item);
     itemArr.push(
       <div>
         <h2>{item.name}</h2>
@@ -23,7 +22,6 @@ const Item = (props) => {
       </div>
     );
   });
-  //   console.log(itemArr);
   return <div className="products">{itemArr}</div>;
 };
 
