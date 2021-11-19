@@ -18,7 +18,7 @@ const Item = (props) => {
     );
   });
   //   console.log(itemArr);
-  return <div className="items">{itemArr}</div>;
+  return <div className="products">{itemArr}</div>;
 };
 
 export default Item;
